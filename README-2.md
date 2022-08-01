@@ -104,4 +104,6 @@
 8. Цепочка обязанностей — разделяет сложное действие в цепочку обработчиков
 
 
+---
 
+* [GitHub * Personal access tokens](https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox/KtbxLwgswrfxtLZJbFzLlPHzglccGQBXXV)
