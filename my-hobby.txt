@@ -1,0 +1,153 @@
+﻿
+Мое имя есть Лазарчук Александр.
+Я являюсь техническим специалистом в области java.
+
+Я есть сотрудник аутсорсинговой компании CTS более трех лет.
+Я разрабатываю программные решения для банковских систем.
+Компания CTS существует уже более пятнадцати лет и продолжает успешно развиваться.
+Эта компания разрабатывает программные продукты для банковского рынка.
+Клиентами компании являются банки на територии украины, европы, штатов.
+казахстан, грузия, киев, ...
+
+Здесь я получил опыт работы с криптографическими технологиями.
+Я принимаю участие в разработке бэкэнд-придлжений и фронтэнд-приложений.
+Я общаюсь с техническими сотрудниками на стороне банка.
+Моей задачей является:
+- внедрение новых технологий в программные решения для банка;
+- техническая поддержка для программного продукта;
+- техническая консультация;
+
+Мы используем следующие технологии:
+Java 7-8, Spring / Spring-Boot, PostgreSQL / Oracle, Hibernate,
+Система управления одноразовыми паролями: SafeNet Authentication Service,
+Модуль безопасности: HSM (Hardware Security Module),
+SSL/TLS криптографический потокол защиты транспортного уровня,
+Система авторизация: Basic-Authentication, LDAP (Active Directory LDAP / OpenLDAP),
+Apache Camel with JBoss Fuse (шаблон обмена InOut - InOut exchange pattern)
+
+Поддержка микросервисной архитектуры
+- Сервера имен: Eureka;
+- балансировка нагрузки на стороне клиента: Ribbon;
+- упрощает разработку REST клиентов: Feign (декларативный шаблонный HTTP-клиент);
+- Распределенная трассировка: Zipkin;
+- API шлюз: Netflix;
+- Отказоустойчивость: с помощью Hystrix;
+
+Docker, Docker-Compose
+
+==========================================================
+
+My name is Lazarchuk Alexander.
+I am a technical specialist of java.
+Now I am outsourcing company employee of the CTS and already more three year.
+
+I develop software solutions for banking systems.
+The CTS company has existed for over fifteen years and continues to develop successfully.
+This company develop software products for the banking market.
+The clients of the company are banks in the arround of Ukraine, Europe and USA.
+kazakhstan, georgia, kiev, ...
+
+This is where I got my experience with cryptographic technologies.
+I am involved to the development of backend and frontend applications.
+I communicate with the technical staff of the bank.
+My responsibilities:
+- introduction of new technologies into software solutions for the bank;
+- technical support for the software product;
+- technical consultation;
+
+We use the following technologies:
+Java 7-8, Spring / Spring-Boot, PostgreSQL / Oracle, Hibernate,
+One-Time Password Management System: SafeNet Authentication Service,
+Security module: HSM (Hardware Security Module),
+SSL / TLS cryptographic transport layer security,
+Authorization system: Basic-Authentication, LDAP (Active Directory LDAP / OpenLDAP),
+Apache Camel with JBoss Fuse (InOut exchange pattern - InOut exchange pattern)
+
+Microservice architecture support
+- Name servers: Eureka;
+- load balancing on the client side: Ribbon;
+- simplifies the menu of REST clients: Feign (declarative template HTTP client);
+- Distributed tracing: Zipkin;
+- API gateway: Netflix;
+- Resiliency: using Hystrix;
+
+Docker, Docker-Compose 
+
+
+
+
+
+Maybe our see later two weeks.
+What do you mind about this?
+
+
+
+
+
+
+
+
+
+
+
+
+https://i-znatok.ru/7303787
+===========================
+
+Motorbikes   are-my hobby.
+Motorbikes   were always something fantastic for-me.
+
+My   interest started   at-the age of 9.
+When   I was given   my-first motorbike   from   my-grandfather.
+And   I-used to ride   about on my-field   at the-back   of my-house.
+
+My bike   is-something special for-me   because   I-can spend   with   it really-nice-time.
+It-is   something as relaxing for-me   to ride a bike   and   I enjoy-it   very much.
+
+Here   are-some-aspects of the hobby   which I-would   like   to share with-you:
+
+There   are-many kind of motorcycle   for-example:
+- off-road bikes,
+- sports bikes,
+- tourist bikes,
+- choppers and cruisers-bikes,
+- trial bikes,
+- motocross bikes.
+I feel   as   in heaven   on sports bike   and   I-often ride in forest   with my-friends.
+
+I really enjoy my hobby   because
+- it-is an extreme sport,
+- it-is a fun sport to-do 
+- and   I like speed
+- and   adrenaline.
+When   I-riding on-my bike   I-feel that   I-am free.
+
+I-know   that   this-is very dangerous hobby,   but   if   I-do something dangerous,   I-accept the-risk.
+
+But   If-you will drive   a motorbike   only one-time,   it-is so great   that   you would like to drive   it   for all-the time.
+
+It-is   like drugs.
+I accept-it   because   the risk   makes our-lives   more interesting.
+
+What to wear:
+
+You should always wear   a helmet   and   some sort of protection   because   this-can protect-you   from nasty injuries.
+Very important from bikers   is   shoes   because legs   are liable for injuries.
+
+By maintenance:
+
+You-should always check   your-oil   and petrol   and change   these regularly.
+Make sure that   you-put the right-fuel   in-the tank.
+Don’t forget   about check pressure   in tires.
+
+
+
+
+
+
+
+
+
+
+
+
