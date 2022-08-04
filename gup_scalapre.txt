@@ -1,0 +1,145 @@
+Платформа онлайн-объявлений
+---------------------------
+
+Миграция приложения на язык Scala была реализована на базе технологий: Scala-2.12, Android SDK, PostgreSQL-8, MongoDB-3, SBT, NPM
+А также применались: Play Framework-2, Silhouette authentication library, SecureSocial module, Scheduling asynchronous tasks, Akka, Websockets, Anorm, Play Slick module, ReactiveMongo Plugin, Elastic Search module, Database evolutions, Play JsMessages library, PL-SQL, Angular-2
+
+Структура приложения:
+1. модуль сервиса авторизации
+2. модуль сервис объявлений (API REST-методы для управления объявлениями)
+3. модуль сервиса выгрузки клиентских файлов на сервер
+4. модуль онлайн-чат сервиса
+5. веб-модуль (веб панель для клиентов, обслуживающего состава и администратора)
+6. мобильное дополнение
+
+Некоторый функционал внедрен на базе этой платформы:
+- базовая авторизация через OAuth-2
+- дополнительная авторизация через социальные сети Twitter, Facebook, Google, LinkedIn
+- предварительная подготовка (кроулинг) фотографий объявления, работа с масивом файлов перед выгрузкой на сервер
+- импортирт объявления из другого сервиса
+- проверка объявления модератором перед его публикацией
+- ограничение срока на публикацю объявления
+- поднять объявление в топ-10
+- рейтинг для владельца объявления и для потенциальных клиентов
+- отзыв о владельце объявления
+- оставить комментарий в объявлении
+- онлайн-чат между владельцем и потенциальными клиентами
+- рассылка уведомлений на электронный адресс пользователей
+- пожаловаться на объявление
+- фильтр для поиска объявления
+- проверка истории объявления
+- блокировать объявление (через администратора)
+- забанить клиента
+- отображать (конвертировать) стоимость в валюте по клиентской локализации в соответствии с базовоой валютой
+- расчет оплаты через систему LiqPay
+- обновление курса валюты через онлайн-сервис
+
+Поддержка платежного сервиса.
+Это отдельная реализация сервиса для проведения безопасной сделки между владельцем объявления и потенциальным клиентом:
+- API (подключение счета к аккаунту и управление клиентскими счетами)
+- SQL процедуры: проверка остатка на клиентском счету, пополнение баланса, списание баланса, история транзакций, откат операции
+- интеграция с сервисом Privat24 (проверка доступной суммы, транзакция на оплату)
+- панель для управления клиентскими счетами, бухгалтерская отчетность
+
+
+На клиентской UI-стороне (Angular) для владельцев объявлений был реализован кроулер (crawling) для предварительной подготовки фотографий, а также работа с масивом файлов перед их выгрузкой на сервер.
+
+Файлы с фото-объявления хранились на файловой системе, это был отдельный файловый сервер.
+В базе хранились связи между клиентскими файлами на диске и номером клиентского объявления.
+
+На клиентской UI-стороне (Angular) для потенциальных клиентов был реализован функционал для расчета оплаты через систему - "LiqPay".
+
+Для рассылки уведомлений на электронный адресс применялась Akka (модель Акторов).
+
+В качестве ORM (Object Relational Mapper) механизма для связи моделей с базой данных в Scala применялся - "Slick".
+
+Применялась встроенная в Play Framework система управления миграциями базы данных - "Database evolutions".
+
+Проверка курса валют выполнялась через онлайн-сервис "Privat24".
+Пересчет цены в объявлениях выполнялся по крону, скриптом MongoDB на стороне NoSQL-сервера.
+
+Поддержка интернационализация (Messages and internationalization - I18N) в приложении на 2-х языках: Украинский, Английский.
+
+В качестве системы сборки и для решения зависимостей применялся - "Sbt".
+
+Плюшки:
++ применялся "Activator" для получения шаблона Play приложения
++ поддержка горячей перекомпиляции
++ использовался паттерн для уменьшения связности кода Inversion Of Control (IoC) - "Google Guice"
+
+Этот проект длился 1.5 года.
+Выполнял функции Java/Scala бэкенд-разработчика.
+Всего на проекте было задействованно:
+1 - менеджер
+2 - бэкенд-разработчика
+1 - фронт-разработчик
+1 - андроид-разработчик
+
+
+На текущий момент работаю на другом проекте, который связанный с карточными технологиями...
+Выполняю функции инженера-разработчика.
+Работаю с технологиями: Java, PostgreSQL/Oracle
+А также применяются: Java, Spring Boot, JPA, TypeScript, Angular, ...
+Еще используются другие инструменты: Appache Jmeter, SoapUi, ...
+
+
+
+
+
+
+
+
+
+
+
+>>>                      (Play modules) https://www.playframework.com/documentation/2.7.x/ModuleDirectory
+    (Reactive Scala Driver for MongoDB) http://reactivemongo.org/releases/0.11/documentation/tutorial/play2.html
+                           (Play Slick) https://github.com/playframework/play-slick
+          (Play FolderMessages library) https://github.com/germanosin/play-foldermessages
+              (Play JsMessages library) https://github.com/julienrf/play-jsmessages
+   (MongoDB [mongo] module * Play 1.x series only) https://www.playframework.com/modules/mongo
+   (Morphia - MongoDB Integration [morphia] module * Play 1.x series only) https://www.playframework.com/modules/morphia
+>> https://www.playframework.com/modules/mongo-1.1/home
+>> (Introduction to Play ** Play Framework Component) https://www.playframework.com/documentation/2.7.x/HelloWorldTutorial
+                                                      https://www.playframework.com/documentation/2.7.x/resources/manual/tutorial/images/play-stack.png
+
+>>> (Silhouette) https://www.silhouette.rocks >> https://www.silhouette.rocks/docs/examples >> https://github.com/mohiva/play-silhouette
+     ----------
+Silhouette is an authentication library for Play Framework applications that supports several authentication methods, including OAuth1, OAuth2, OpenID, CAS, Credentials, Basic Authentication, Two Factor Authentication or custom authentication schemes.
+
+>>> (Scheduling asynchronous tasks) https://www.playframework.com/documentation/2.7.x/ScheduledTasks
+     -----------------------------
+
+>> (playframework/play1) https://github.com/playframework/play1
+>> (Quartz Extension and utilities for true scheduling in Akka 2.5.x) https://index.scala-lang.org/enragedginger/akka-quartz-scheduler/akka-quartz-scheduler/1.8.1-akka-2.5.x?target=_2.13
+
+(play framework 2 интернационализация)
+>>> (Scala Воспроизвести 2.0. Ошибка компиляции: ошибка ввода-вывода при декодировании) http://qaru.site/questions/8113646/play-framework-212-internationalization-doesnt-work-with-finnish-characters
+                                                                                        http://qaru.site/questions/539124/scala-play-20-compilation-error-io-error-while-decoding
+                                                                                        https://www.playframework.com/documentation/1.2/i18n
+                                                                                        https://www.playframework.com/documentation/2.0/ScalaI18N
+                                                                                        https://www.playframework.com/documentation/2.7.x/ScalaI18N (https://www.playframework.com/documentation/2.7.x/JavaI18N)
+                                (многомодульный проект Scala ** henrikengstrom/roygbiv) https://github.com/henrikengstrom/roygbiv
+>> http://qaru.site/questions/15192619/internationalization-with-messages-not-working-in-production-play-framework
+>>> (Документация Xitrum Scala Web Framework Guide) https://xitrum-framework.github.io/guide/3.27/html/ru/i18n.html
+>> (Установка неявного языка в i18n Play 2.4 Шаблон Scala) http://qaru.site/questions/5199602/setting-implicit-language-in-i18n-play-24-scala-template
+
+>>> (Play Framework and Slick example updated) https://pedrorijo.com/blog/play-slick-updated/
+               (pedrorijo91/play-slick3-steps) https://github.com/pedrorijo91/play-slick3-steps/tree/play-2.7
+>> (Play-Bootstrap ** Play Framework library for Bootstrap Forms) https://adrianhurt.github.io/play-bootstrap/
+
+
+
+
+
+
+
+
+
+В ходе разработки нужно реализовывавать разные бизнес задачи.
+Обычно эти бизнес задачи повторяются между собой - они выполняют те же самые функции, только в другом контексте приложения.
+"Дизайн-паттерны программирования" - это проверенный способ для конкретной реализации задачи.
+Эти паттерны программирования были проверены-испытанны в разных условиях И показали стабильный результат, который надежно подойдет для решения задач.
+Программный код приложения постоянно переписывается и обновляется, а дизайн-паттерны программирования решают варианты реализации с учетом будущих изменений вносимых в такой код.
+
+
