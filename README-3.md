@@ -44,3 +44,17 @@
 2. `fork()` — разбивает задачу на подзадачи и помещает их в очередь для текущего потока
 3. `join()` — если для родительской задачи выполнены все подзадачи, тогда поднимается на задачу выше
 
+### Java 8 CompletableFuture
+
+* https://vertex-academy.com/tutorials/ru/java-8-completablefuture
+* https://vertex-academy.com/tutorials/ru/java-8-completablefuture-part-2
+
+* `CompletableFuture` — класс для асинхронной работы, позволяет комбинировать шаги обработки соединяя их в цепочку (содержит около 50-методов)
+* `CompletableFuture.supplyAsync()` — метод для создания CompletableFuture
+* `CompletableFuture.get()` — метод для получения результата из CompletableFuture
+* методы для в CompletableFuture:
+  * `thenApply()`
+  * `thenCompose()`
+  * `thenCombine()`
+
+
