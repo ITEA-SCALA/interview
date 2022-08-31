@@ -8,6 +8,8 @@ import java.util.Arrays;
  * @see https://robotdreams.cc/blog/244-kakie-algoritmy-sortirovki-dolzhen-znat-junior-java-developer
  *      https://rukovodstvo.net/posts/id_798
  *      https://javarush.ru/groups/posts/1997-algoritmih-sortirovki-v-teorii-i-na-praktike
+ *    ( https://habr.com/ru/post/204968 )
+ *    ( https://habr.com/ru/post/204600 )
  *
  * Недостатки:
  * 1. в такой сортировке <отсутствуют алгоритмы для повышения эффективности>, с целью снизить количество попыток обращения к списку.
