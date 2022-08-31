@@ -140,7 +140,7 @@ Concurrency Collection - тут подразумевается не скорос
 
 ```text
 1. <Atomic-классы> (неблокирующий алгоритм)
-2. Синхронизированные коллекции (обвертки) <Synchronized Collections>:
+2. <Synchronized Collections> синхронизированные коллекции (обвертки):
    - synchronizedCollection
    - synchronizedList
    - synchronizedMap
@@ -152,7 +152,7 @@ Concurrency Collection - тут подразумевается не скорос
    Синхронизировать get-методы без надобности, так как модификаций при этом не происходит,
      но поскольку get-методы тоже синхронизированными - это будет лишний раз тормозить работу с коллекцией в многопоточной среде.
    Но итераторы, в Synchronized Collections, не являются синхронизированными.
-3. Неблокирующая реализация <SkipList Collections> (синхронизированный доступ без блокировок):
+3. <SkipList Collections> неблокирующая реализация (синхронизированный доступ без блокировок):
    - ConcurrentSkipListSet
    - ConcurrentSkipListMap
    Такие SkipList Collections реализованы на основании SkipList-ов (неблокирующих алгоритмов)
