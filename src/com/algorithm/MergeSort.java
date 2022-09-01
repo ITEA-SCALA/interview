@@ -69,7 +69,7 @@ public class MergeSort {
         System.arraycopy(buffer, 0, source, left, buffer.length);
     }
 
-    //TODO: https://rukovodstvo.net/posts/id_798
+    // https://rukovodstvo.net/posts/id_798
     public static void mergeSort2(int[] array, int left, int right) {
         if (right <= left) return;
         int mid = (left+right)/2;
