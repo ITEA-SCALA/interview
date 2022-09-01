@@ -244,7 +244,7 @@ while (linkedListIterator.hasNext()) {
 ```
 Или в локаничной форме, это тоже самое:
 ```java
-for(String value : linkedList) {
+for (String value : linkedList) {
     /* ... */
 }
 ```
