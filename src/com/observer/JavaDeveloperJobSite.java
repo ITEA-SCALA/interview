@@ -1,19 +1,19 @@
 package com.observer;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class JavaDeveloperJobSite implements Observed {
-    List<String> vacancies = new ArrayList<>();
-    List<Observer> subscribers = new ArrayList<>();
+    private List<String> vacancies = new LinkedList<>();
+    private List<Observer> subscribers = new LinkedList<>();
 
     public void addVacancy(String vacancy) {
-        this.vacancies.add(vacancy);
+        vacancies.add(vacancy);
         notifyObserver();
     }
 
     public void removeVacancy(String vacancy) {
-        this.vacancies.remove(vacancy);
+        vacancies.remove(vacancy);
         notifyObserver();
     }
 
@@ -29,8 +29,8 @@ public class JavaDeveloperJobSite implements Observed {
 
     @Override
     public void notifyObserver() {
-        for (Observer observer: subscribers) {
-            observer.handleEvent(this.vacancies);
+        for (Observer observer : subscribers) {
+            observer.handleEvent(vacancies);
         }
     }
 }
