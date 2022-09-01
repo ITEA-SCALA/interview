@@ -192,3 +192,9 @@ Concurrency Collection - тут подразумевается не скорос
     (Hibernate для своих кеш-уровней также использует синхронизированную хеш-карту)
 - (а в случаях, где модификация списка отсутствует, лучше применять обычную коллекцию, не concurrency)
 ```
+
+---
+
+* `For loop или Foreach — что из них быстрее в Java?` https://javarush.ru/groups/posts/3843-kofe-breyk-137-for-loop-ili-foreach--chto-iz-nikh-bihstree-v-java-8-ehffektivnihkh-sposobov-per
+* `Чем iterator отличается от цикла for в Java?` https://ru.stackoverflow.com/questions/765959/Чем-iterator-отличается-от-цикла-for-в-java
+* `Использование Spliterator в Java` https://coderlessons.com/articles/java/ispolzovanie-spliterator-v-java
