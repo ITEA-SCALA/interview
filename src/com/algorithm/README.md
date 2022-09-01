@@ -221,3 +221,32 @@ Concurrency Collection - тут подразумевается не скорос
 * `For loop или Foreach — что из них быстрее в Java?` https://javarush.ru/groups/posts/3843-kofe-breyk-137-for-loop-ili-foreach--chto-iz-nikh-bihstree-v-java-8-ehffektivnihkh-sposobov-per
 * `Чем iterator отличается от цикла for в Java?` https://ru.stackoverflow.com/questions/765959/Чем-iterator-отличается-от-цикла-for-в-java
 * `Использование Spliterator в Java` https://coderlessons.com/articles/java/ispolzovanie-spliterator-v-java
+
+
+### Что такое For-цикл и Foreach в Java?
+
+* For-циклы обычно применяются для индексируемых списков
+Например:
+```java
+for (int i = 0; i < arrayList.length; i++) {
+ /* ... */
+}
+```
+Производительность цикла *for* лучше для **ArrayList**.
+
+* Foreach в Java - это способ перебрать все элементы через Итератор, только в локаничной форме записи.
+Например:
+```java
+Iterator<String> linkedListIterator = linkedList.iterator();
+while (linkedListIterator.hasNext()) {
+    String value = linkedListIterator.next();
+    /* ... */
+}
+```
+Или в локаничной форме, это тоже самое:
+```java
+for(String value : linkedList) {
+    /* ... */
+}
+```
+Производительность цикла *forEach* лучше для **LinkedList**.
