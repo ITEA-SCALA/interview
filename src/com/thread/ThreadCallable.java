@@ -7,6 +7,7 @@ import java.util.concurrent.FutureTask;
 
 /**
  * @see https://russianblogs.com/article/9415826053
+ *      https://javarush.ru/groups/posts/2065-threadom-java-ne-isportishjh--chastjh-iv---callable-future-i-druzjhja
  *
  * Этот пример демонстрирует работу с реализацией Java-concurrent Thread/Callable.
  * Чтобы оповещать главный поток об результатах выполнения из побочных потоков - интерфейс Callable, возвращает тип Future
