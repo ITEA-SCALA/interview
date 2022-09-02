@@ -124,7 +124,7 @@ Collection.sort() работает, вызывая базовый Arrays.sort()
 * `Callable, Future и друзья` https://javarush.ru/groups/posts/2065-threadom-java-ne-isportishjh--chastjh-iv---callable-future-i-druzjhja
 
 1. в стандартной Java-библиотеке есть классический **Thread** ... нужно самому заботиться о правильности блокировок,
-   а в Java concurrent-библиотеке есть **Callable** ... позволяет получить результаты выполнения операций
+   а в Java concurrent-библиотеке есть **Callable** ... позволяет получать результаты выполнения операций
 2. **ExecutorService** ... это сервис, который использует пред-настроенный пул-потоков и управляет ими
    а **ScheduledExecutorService** ... это ExecutorService, который применяется в планировщиках заданий
 3. **ForkJoinPool фреймворк** ... этот сервис использует системные пулы-потоков, которые доступные в ресурсах 
