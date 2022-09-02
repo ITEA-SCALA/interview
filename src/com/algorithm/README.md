@@ -121,6 +121,8 @@ Collection.sort() работает, вызывая базовый Arrays.sort()
 
 ### Concurrency | Способы запуска побочных потоков:
 
+* `Callable, Future и друзья` https://javarush.ru/groups/posts/2065-threadom-java-ne-isportishjh--chastjh-iv---callable-future-i-druzjhja
+
 1. в стандартной Java-библиотеке есть классический **Thread** ... нужно самому заботиться о правильности блокировок,
    а в Java concurrent-библиотеке есть **Callable** ... позволяет получить результаты выполнения операций
 2. **ExecutorService** ... это сервис, который использует пред-настроенный пул-потоков и управляет ими
@@ -131,7 +133,7 @@ Collection.sort() работает, вызывая базовый Arrays.sort()
     - применяются в веб-сервисах
 
 ```text
-По умолчанию, в Java-8, в Stream.parallel() - используется ForkJoinPool фреймворк.
+По умолчанию, в SteamAPI из Java-8 - используется ForkJoinPool фреймворк.
 ```
 ```text
 Когда из побочного потока выбрасывается Exception, в этом случае главный поток об этом никогда не узнает.
