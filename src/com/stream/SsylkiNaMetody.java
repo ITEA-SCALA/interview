@@ -9,6 +9,7 @@ import java.util.function.Function;
  * @see https://vertex-academy.com/tutorials/ru/java-8-ssylki-na-metody
  */
 public class SsylkiNaMetody {
+
     public static void main(String[] args) {
         // 1.
         UserFactory userFactory = User::new;
