@@ -19,7 +19,7 @@ public class StreamMap {
                 new Car("AI3838PP", 2017));
 
         cars.stream()
-                .filter(car -> car.getYear() >= 2010)                  // выбираем только машины, выпущенные после 2010 года
+                .filter(car -> car.getYear() >= 2010)                  // выбираем только машины, выпущенные с 2010 года
                 .map(Car::getNumber)                                   // преобразовываем Stream машин в Stream номеров
                 .filter(number -> number != null && !number.isEmpty()) // выбираем только не пустые номера
                 .forEach(System.out::println);
